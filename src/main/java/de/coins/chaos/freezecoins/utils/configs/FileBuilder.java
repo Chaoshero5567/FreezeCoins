@@ -84,8 +84,8 @@ public class FileBuilder {
     public void save() {
         try {
             configuration.save(file);
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException exception) {
+            exception.printStackTrace();
         }
     }
     public void saveDefaults() {

@@ -1,6 +1,7 @@
 package de.coins.chaos.freezecoins;
 
 import com.j256.ormlite.jdbc.JdbcPooledConnectionSource;
+import de.coins.chaos.freezecoins.listeners.JoinListener;
 import de.coins.chaos.freezecoins.utils.coinslibary.ICoinsInterface;
 import de.coins.chaos.freezecoins.utils.coinslibary.ICoinsRepository;
 import de.coins.chaos.freezecoins.utils.configs.SQLConfig;
@@ -31,6 +32,8 @@ public final class FreezeCoins extends JavaPlugin {
         }
 
         iCoinsInterface = new ICoinsRepository(source);
+
+        Bukkit.getPluginManager().registerEvents(new JoinListener(iCoinsInterface), this);
 
     }
 
