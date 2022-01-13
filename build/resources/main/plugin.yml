@@ -1,0 +1,8 @@
+name: FreezeCoins
+version: '${project.version}'
+main: de.coins.chaos.freezecoins.FreezeCoins
+prefix: FreezeCoins
+softdepend: [ Vault ]
+authors: [ Chaoshero5567 ]
+description: FreezeCoins is an vault compatible CoinsSystem that shares it main logic with the Coins System of the FreezeFire network
+website: https://github.com/Chaoshero5567
